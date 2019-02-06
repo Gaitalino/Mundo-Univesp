@@ -2,9 +2,9 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: Helvetica, sans-serif;
-		font-weight: 600;
-		min-width: 300px;
-		background-color: #F2F2F2;
+	font-weight: 600;
+	min-width: 300px;
+	background-color: #F2F2F2;
 }
 .container{
 	width: 96%;	
@@ -36,6 +36,32 @@ header{
 
 
 
+/* /destaques*/
+.carousel-caption {
+    position: absolute;
+    right: 3%;
+    bottom: 0px;
+    left: 3%;
+    z-index: 10;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #fff;
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: normal;
+}
+.carousel-indicators {
+    margin-bottom: 2px;
+}
+.carousel-indicators li {
+    width: 3%;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+#noticias-recentes h6{
+	font-size: 0.7rem!important;
+}
 
 
 
@@ -43,6 +69,30 @@ header{
 
 
 
+
+
+
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
 
 
 
@@ -54,6 +104,8 @@ header{
 	.h1, h1, .h2,h2 {
     font-size: 1.5rem;
 }
+
+
 }
 
 

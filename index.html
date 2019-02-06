@@ -47,83 +47,93 @@
       </div> 
     </header>
 
-    <section id="principal">
+    <section class="pt-2"><!--Banner destaque-->
       <div class="container">
-        <div class="row">
-          <div class="col-12">
+        <!--Inicio Banner destaque-->
+          <div class="col-12 bg-light p-1">
+            
             <!--Inicio Carousel-->
-            <div id="index-carousel" class="carousel slide pt-2" data-ride="carousel" >
+            <div id="index-carousel" class="carousel slide" data-ride="carousel" >
 
-              <!--Indicadores carousel-->
+              <!--Indicadores-->
               <ol class="carousel-indicators">
-                <li data-targer="#index-carousel" data-slide-to="0" class="active"></li>
-                <li data-targer="#index-carousel" data-slide-to="1" class=""></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
               </ol>
                   
               <!-- Itens do carousel-->
-              <div class="carousel-inner m-auto pb-5">
+              <div class="carousel-inner m-auto">
                 <div class="carousel-item active text-center">
-                  <a href=""><img class="img-fluid" src="img/andradina.jpg"></a> 
-                  <h5 >Representantes da prefeitura de Andradina visitam sede da Univesp</h5>
+                  <a href=""><img class="img-fluid img-thumbnail" src="img/andradina.jpg"></a> 
+                  <div class="carousel-caption">
+                    <p class="">Representantes da prefeitura de Andradina visitam sede da Univesp</p>
+                  </div>
                 </div>
 
                 <div class="carousel-item text-center">
-                  <a href=""><img class="img-fluid" src="img/rodolfo_01.jpg"></a> 
-                  <h5>Professor Rodolfo Jardim de Azevedo assume presidência da Univesp</h5>
+                  <a href=""><img class="img-fluid img-thumbnail" src="img/rodolfo_01.jpg"></a> 
+                  <div class="carousel-caption">
+                    <p class="">Professor Rodolfo Jardim de Azevedo assume presidência da Univesp</p>
+                  </div>
                 </div>
               </div><!--Fim dos itens carousel-->
 
               <!-- Controles-->
-              <a class="carousel-control-prev w-auto" href="#index-carousel" role="button" data-slide="prev">
+              <a class="carousel-control-prev" href="#index-carousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
                 <span class="sr-only">Anterior</span>
               </a>
 
-              <a class="carousel-control-next w-auto" href="#index-carousel" role="button" data-slide="next">
+              <a class="carousel-control-next " href="#index-carousel" role="button" data-slide="next">
                 <span class="carousel-control-next-icon"></span>
                 <span class="sr-only">Próximo</span>
               </a>
             </div><!--Fim do carousel-->
-          </div>
-
-
-
-          <div class="col-12">
-            <div id="noticias-recentes" class="text-center">
-              <div class="container">
-                <h2>Notícias recentes</h2>
-                
-                  <a href="">
-                    <div class="row">
-                      <img class="col-4" src="img/andradina.jpg" width="100" height="70">
-                      <h6 class="col-8">Representantes da prefeitura de Andradina visitam sede da Univesp</h6>
-                    </div>  
-                  </a>
-               
-
-                <div class="painel-inferior-conteudo">
-                  <img class="float-left" src="imagens/cidade.jpg" width="100">
-                  <h4><a href=""> CRISE EUROPÉIA</a></h4>
-                  <p>Lorem ipsum dolor sit amet...</p>
-                </div>  
-
-                <div class="painel-inferior-conteudo">
-                  <img class="float-left" src="imagens/taxi.jpg" width="100">
-                  <h4><a href=""> CRISE EUROPÉIA</a></h4>
-                  <p>Lorem ipsum dolor sit amet...</p>
-                </div>  
-
-                <div class="painel-inferior-conteudo">
-                  <img class="float-left" src="imagens/doutor.jpg" width="100">
-                  <h4><a href=""> CRISE EUROPÉIA</a></h4>
-                  <p>Lorem ipsum dolor sit amet...</p>
-                </div>          
-              </div>
-
-            </div>
-          </div>
-        </div>        
+          </div><!--Fim Banner destaque-->
       </div>
+    </section>
+
+    <section id="destaques" class="pt-4">
+      <div class="container">
+        <div class="row bg-warning">
+          <!--Noticias Lateral-->
+          <div class="col-6 text-center">
+            <h2 class="pb-2 ">Notícias recentes</h2>
+            <a href="" class="">
+              <div class="row  text-dark">
+                <div class="img-fluid col-6 d-none d-md-block">
+                  <img class=" img-thumbnail p-1" src="img/andradina.jpg">
+                </div>
+                
+                <h6 class="col-6 p-2 m-auto">Representantes da prefeitura de Andradina visitam sede da Univesp</h6>
+              </div>  
+            </a>
+          </div>
+          <div class="col-6">
+            <div class="pb-2">
+                    <a href="">
+                      <div class="row bg-light p-2 text-dark">
+                        <img class="col-6 p-0" src="img/rodolfo_01.jpg" height="70">
+                        <h6 class="col-6 p-2">Professor Rodolfo Jardim de Azevedo assume presidência da Univesp</h6>
+                      </div>  
+                    </a>
+                  </div>
+
+                  <div class="pb-2">
+                    <a href="">
+                      <div class="row bg-light p-2 text-dark">
+                        <img class="col-6 p-0" src="img/andradina.jpg" height="70">
+                        <h6 class="col-6 p-2">Representantes da prefeitura de Andradina visitam sede da Univesp</h6>
+                      </div>  
+                    </a>
+          </div>
+          <!--Fim Noticias Lateral-->
+
+
+        </div><!--row--> 
+
+
+      </div><!--container--> 
     </section>
 
 
