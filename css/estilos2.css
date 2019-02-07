@@ -7,6 +7,55 @@ body{
 	background-color: #F2F2F2;
 }
 
+.link{
+	text-decoration: underline!important;
+	font-style: italic;
+	text-transform: lowercase;
+	font-size: 0.7rem;
+}
+
+
+/*cabeçalho*/
+header{
+	background-color: #29220A;
+}
+#cabecalho span{
+	color:#B45F04!important;
+}
+#logo a{
+	font-size: 1.5rem;
+}
+
+
+/*Banner*/
+
+.carousel-caption {
+    position: absolute;
+    right: 3%;
+    bottom: 0px;
+    left: 3%;
+    z-index: 10;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #fff;
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: normal;
+}
+.carousel-indicators {
+    margin-bottom: 2px;
+}
+.carousel-indicators li {
+    width: 3%;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+/*Noticias*/
+
+
+/*Destaques*/
 
 
 
@@ -20,36 +69,24 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-html {
+/*Tipografia*/
+body{
+	font-size: 100%;
+}
+html, li {
   font-size: 1rem;
 }
-
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 1.2rem;
-  }
+h2 {
+    font-size: 1.1rem;
+}
+h6, p, strong{
+	font-size: 0.7rem;
 }
 
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 1.4rem;
-  }
+a{
+	font-size: 0.6rem;
 }
 
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 1.6rem;
-  }
-}
 
 
 
@@ -59,22 +96,139 @@ html {
 /* Small devices (phones, 576px and down)*/
 @media(max-width: 575px){
 
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+}
 }
 
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
 
+
+	/*Tipografia*/
+	html, li{
+	  font-size: 1.1rem;
+	}
+	h2 {
+	    font-size: 1.2rem;
+	}
+	h6, p, strong{
+		font-size: 0.8rem;
+	}
+
+	a{
+		font-size: 0.7rem;
+	}
+
+	#logo a{
+	font-size: 1.6rem;
+	}
+	#cabecalho li a{
+		font-size: 1.1rem;
+	}
+
+
+
+
+	.navbar-toggler-icon {
+	    display: inline-block;
+	    width: 1.2em;
+	    height: 1.2em;
+	    vertical-align: middle;
+	    content: "";
+	    background: no-repeat center center;
+	    background-size: 100% 100%;
+	}
 }
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 
+	/*Tipografia*/
+	html, li{
+	  font-size: 1.2rem;
+	}
+	h2 {
+	    font-size: 1.3rem;
+	}
+	h6, p, strong{
+		font-size: 0.9rem;
+	}
+
+	a{
+		font-size: 0.8rem;
+	}
+	#logo a{
+	font-size: 1.7rem;
+	}
+	#cabecalho li a{
+		font-size: 1.2rem;
+	}
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+	/*Tipografia*/
+	html, li {
+	  font-size: 1rem;
+	}
+	h2 {
+	    font-size: 1.1rem;
+	}
+	h6, p, strong{
+		font-size: 0.7rem;
+	}
 
+	a{
+		font-size: 0.6rem;
+	}
+	#logo a{
+	font-size: 1.8rem;
+	}
+	#cabecalho li a{
+		font-size: 1.3rem;
+	}
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) { 
+	/*Tipografia*/
+	html {
+	  font-size: 1rem;
+	}
+	h2 {
+	    font-size: 1.1rem;
+	}
+	h6, p, strong{
+		font-size: 0.7rem;
+	}
+
+	a{
+		font-size: 1rem;
+	} 
+	#logo a{
+	font-size: 1.9rem;
+	}
+	#cabecalho li a{
+		font-size: 1.4rem;
+	}
+	
+
+
+
+
+
+
+	header{
+		padding-bottom: 40px;
+	}
+	#banner{
+	margin-top: -50px;
+}
+}
