@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="css/estilos2.css">
+
+        <!--Fonts Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+        <title>Mundo Univesp</title>
+    </head>
+    <body>
+         <header class="" id="cabecalho">
+
+            <div class="container">
+                <div class="row py-3">
+                    <!--logo-->
+                    <div id="logo" class="col-12 text-center text-md-center align-self-center ">
+                        <h1><a href="" class="text-light align-self-center">Mundo <span>Univesp</span></a></h1>        
+                    </div> 
+
+                    <nav class="navbar navbar-dark col-4 d-md-none"> 
+                        <!--Hamburguer-->
+                        <div class="ml-auto">
+                          <button class="navbar-toggler m-auto" data-toggle="collapse" data-target="#navegacao">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                        </div>
+                    </nav>
+
+
+                    <!--Navegação-->
+                    
+                </div>
+
+                <div class="navbar-expand-md row">
+                        <div class="collapse navbar-collapse col-10" id="navegacao">
+                          <ul class="navbar-nav m-auto">
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Engenharia
+                                </a>
+                                    <div class="dropdown-menu dropdown-menu-right pb-0 bg-warning text-center" aria-labelledby="navbarDropdownMenuLink">
+                                      <a class="dropdown-item" href="computacao.php">Computacao</a>
+                                      <a class="dropdown-item" href="#">Producao</a>
+                                    </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Licenciatura
+                                </a>
+                                    <div class="dropdown-menu dropdown-menu-right pb-0 bg-warning text-center" aria-labelledby="navbarDropdownMenuLink">
+                                      <a class="dropdown-item text-light" href="#">Biologia</a>
+                                      <a class="dropdown-item text-light" href="#">Física</a>
+                                      <a class="dropdown-item text-light" href="#">Matemática</a>
+                                      <a class="dropdown-item text-light" href="#">Quimica</a>
+                                    </div>
+                            </li>
+
+                            <li class="nav-item"><a class="nav-link text-light" href="">Pedagogia</a></li>
+
+                            <li class="nav-item"><a class="nav-link text-light" href="">Contato</a></li>
+
+                            <li class="nav-item"><a class="nav-link text-light" href="">Sobre</a></li>
+
+                        </ul>
+                        </div>
+                        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <?php  echo $_SESSION['usuario']['nome']; ?>
+                                </a>
+                                    <div class="dropdown-menu dropdown-menu-right pb-0 bg-dark text-left" aria-labelledby="navbarDropdownMenuLink">
+                                      <a class="dropdown-item" href="dados_cadastrais.php">Dados Cadastrais</a>
+                                      <a class="dropdown-item" href="logout.php">Sair</a>
+                                    </div>
+                            </li>
+                    </div> 
+            </div>
+        </header>
+
+        <section id="banner">
+            <div class="container mt-2">
+                <!--Inicio Banner destaque-->
+                <div class="col-12 bg-light p-1">
+                
+                    <!--Inicio Carousel-->
+                    <div id="index-carousel" class="carousel slide" data-ride="carousel" >
+
+                        <!--Indicadores-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        </ol>
+                              
+                        <!-- Itens do carousel-->
+                        <div class="carousel-inner m-auto">
+                            <div class="carousel-item active text-center">
+                                <a href=""><img class="img-fluid img-thumbnail" src="img/andradina.jpg"></a> 
+                                <div class="carousel-caption">
+                                    <p class="">Representantes da prefeitura de Andradina visitam sede da Univesp</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item text-center">
+                                <a href=""><img class="img-fluid img-thumbnail" src="img/rodolfo_01.jpg"></a> 
+                                <div class="carousel-caption">
+                                    <p class="">Professor Rodolfo Jardim de Azevedo assume presidência da Univesp</p>
+                                </div>
+                            </div>
+                        </div><!--Fim dos itens carousel-->
+
+                        <!-- Controles-->
+                        <a class="carousel-control-prev" href="#index-carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+
+                        <a class="carousel-control-next " href="#index-carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </div><!--Fim do carousel-->
+                </div><!--Fim Banner destaque-->
+            </div>
+        </section>
+ 
+        <section id="noticias" class="pt-4 mb-2 mt-4">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-12 col-lg-8 mb-3">
+                        <h2 class="">Notícias</h2>
+                        <a href=""  class=" "> 
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="img/professora.jpg" width="" alt="Luis Kawaguti/UOL" title="Luis Kawaguti/UOL" class="img-fluid"> 
+                                </div>
+                                <div id="noticia-destaque" class="col-md-8">
+                                    <strong class="text-danger">
+                                        Nova diretora
+                                    </strong> 
+                                    <h2 class="text-dark font-weight-bold">
+                                        Professora Simone Telles é a nova diretora acadêmica da Univesp 
+                                    </h2> 
+                                    <p class="text-dark font-weight-normal">
+                                        Ex-coordenadora da Educação a Distância das Fatecs
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="d-none d-lg-block">
+                            <a href=""  class=" "> 
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="img/professora.jpg" width="" alt="Luis Kawaguti/UOL" title="Luis Kawaguti/UOL" class="img-fluid"> 
+                                </div>
+                                <div id="noticia-destaque" class="col-md-8">
+                                    <strong class="text-danger">
+                                        Nova diretora
+                                    </strong> 
+                                    <h2 class="text-dark font-weight-bold">
+                                        Professora Simone Telles é a nova diretora acadêmica da Univesp 
+                                    </h2> 
+                                    <p class="text-dark font-weight-normal">
+                                        Ex-coordenadora da Educação a Distância das Fatecs
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href=""  class=" "> 
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="img/professora.jpg" width="" alt="Luis Kawaguti/UOL" title="Luis Kawaguti/UOL" class="img-fluid"> 
+                                </div>
+                                <div id="noticia-destaque" class="col-md-8">
+                                    <strong class="text-danger">
+                                        Nova diretora
+                                    </strong> 
+                                    <h2 class="text-dark font-weight-bold">
+                                        Professora Simone Telles é a nova diretora acadêmica da Univesp 
+                                    </h2> 
+                                    <p class="text-dark font-weight-normal">
+                                        Ex-coordenadora da Educação a Distância das Fatecs
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+
+                        <div class="text-md-left link pt-1">
+                            <a href="" class="text-dark font-weight-normal">Mais Notícias</a>
+                        </div>                      
+                    </div>
+
+                    <div class="col-12 col-lg-4 text-center ">
+                        <div class="align-self-center">
+                            <h2 class="">Vem por aí</h2>
+
+                            <hr class="w-50 d-md-none">
+                            <hr class="d-none  d-md-block">
+        
+                            <ul class="list-unstyled font-weight-normal">
+                                <li class="text-danger">23/01 - Exame </li>
+                                <li class="text-danger">23/02 - Prova 1 semestre </li>
+                                <li class="text-warning">27/02 - Entrega documentos </li>
+                                <li class="text-warning">23/03 - Prova 2 semestre </li>
+                                <li class="text-warning">23/04 - Exame  provas 2 semestre </li>
+                                <li class="text-warning">23/05 - Exame </li>
+                                <li class="text-success">27/02 - Entrega documentos </li>
+                                <li class="text-success">23/03 - Prova 2 semestre </li>
+                                <li class="text-success">23/04 - Exame  provas 2 semestre </li>
+                                <li class="text-success">23/05 - Exame </li><li class="">27/02 - Entrega documentos </li>
+                            </ul>  
+                        </div>     
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+
+
+
+
+        
+
+            
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
+</html>
