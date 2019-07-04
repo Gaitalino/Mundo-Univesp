@@ -1,3 +1,10 @@
+<?php
+session_start();
+    if($_SESSION['autoriza_login'] <> 1){
+        header('Location:login.php?erro=2');
+    }
+
+?>
 <html lang="pt-br">
      <head>
          <!-- Required meta tags -->
@@ -79,7 +86,7 @@
                <nav class="navbar navbar-dark row"> 
                     <!--logo-->
                     <div class=" col-12 text-center">
-                         <h1><a href="index.php" class="text-light" style="text-decoration: none;">Mundo <span>Univesp</span></a></h1>
+                         <h1><a href="home.php" class="text-light" style="text-decoration: none;">Mundo <span>Univesp</span></a></h1>
                     </div>   
           </header>
 

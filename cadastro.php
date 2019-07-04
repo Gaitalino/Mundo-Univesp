@@ -1,3 +1,5 @@
+
+
 <html lang="pt-br">
      <head>
          <!-- Required meta tags -->
@@ -111,7 +113,7 @@
                                             
                                              <button onclick="validaCadastro()"  type="" class="btn btn-lg btn-block"  style="
                                              background-color: #B45F04;color: black">Cadastrar</button>
-                                             <p class="text-right pt-1"><a href="index.php" class="text-dark">Voltar</a></p>
+                                             <p class="text-right pt-1"><a href="login.php" class="text-dark">Voltar</a></p>
                                         </form>
                                    </div>
                               </div>

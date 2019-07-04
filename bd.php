@@ -1,4 +1,8 @@
 <?php
+	session_start();
+    if($_SESSION['autoriza_login'] <> 1){
+        header('Location:login.php?erro=2');
+    }
 
 	$username = "root";
 	$password = "";

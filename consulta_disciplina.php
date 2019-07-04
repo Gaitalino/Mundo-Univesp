@@ -1,4 +1,5 @@
 <?php
+
   $bimestre = $_GET['bimestre'];
             getAllDisciplinas($bimestre);
 

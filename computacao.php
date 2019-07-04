@@ -1,10 +1,5 @@
 <?php
-    session_start();
     include_once "bd.php";
-    
-    if($_SESSION['autoriza_login'] <> 1){
-        header('Location:index.php?erro=2');
-    }
 
 ?>
 
@@ -113,7 +108,7 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-right pb-0 bg-dark text-left" aria-labelledby="navbarDropdownMenuLink">
                             <a class="nav-link text-danger" href="cadastro_conteudo.php">Cadastrar Conteudo</a>
-                              <a class="dropdown-item" href="dados_cadastrais.php">Dados Cadastrais</a>
+                              <a class="dropdown-item" href="">Dados Cadastrais</a>
                               <?php
                                 if($_SESSION['usuario']['tipo'] == 3){
                               ?>

@@ -1,8 +1,4 @@
 <?php
-    session_start();
-    if($_SESSION['autoriza_login'] <> 1){
-        header('Location:index.php?erro=2');
-    }
 
     include_once "bd.php";
     $query = "select * from videos v inner join disciplinas d on v.id_disciplina = d.id_disciplina where v.status = 1 order by id_video desc limit 4";
@@ -125,7 +121,7 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-right pb-0 bg-dark text-left" aria-labelledby="navbarDropdownMenuLink">
                             <a class="nav-link text-danger" href="cadastro_conteudo.php">Cadastrar Conteudo</a>
-                              <a class="dropdown-item" href="dados_cadastrais.php">Dados Cadastrais</a>
+                              <a class="dropdown-item" href="">Dados Cadastrais</a>
                               <?php
                                 if($_SESSION['usuario']['tipo'] == 3){
                               ?>

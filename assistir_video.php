@@ -1,12 +1,8 @@
 <?php
-    session_start();
     include_once "bd.php";
 
     error_reporting(E_ALL & ~E_WARNING & ~E_NOTICE);
     
-    if($_SESSION['autoriza_login'] <> 1){
-        header('Location:index.php?erro=2');
-    }
 
     $id_video = $_GET['id_video'] ? $_GET['id_video'] : '';
 
@@ -115,7 +111,7 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-right pb-0 bg-dark text-left" aria-labelledby="navbarDropdownMenuLink">
                             <a class="nav-link text-danger" href="cadastro_conteudo.php">Cadastrar Conteudo</a>
-                              <a class="dropdown-item" href="dados_cadastrais.php">Dados Cadastrais</a>
+                              <a class="dropdown-item" href="">Dados Cadastrais</a>
                               <?php
                                 if($_SESSION['usuario']['tipo'] == 3){
                               ?>

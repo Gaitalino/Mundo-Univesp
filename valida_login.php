@@ -18,7 +18,7 @@
 			$_SESSION['usuario'] = $usuario;
 			header('Location:home.php');
 			}else{
-				header('Location:index.php?erro=1');
+				header('Location:login.php?erro=1');
 		}
 	}
 
@@ -42,7 +42,7 @@
 		$stmt->bindParam(':id_video3', $id_video3);
 		$stmt->bindParam(':bimestre', $bimestre);
 		$stmt->execute();
-		header('Location:index.php?sucess=1');
+		header('Location:login.php?sucess=1');
 	}
 
 	if($acao == 2){
